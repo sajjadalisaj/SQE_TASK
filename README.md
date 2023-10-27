@@ -27,3 +27,52 @@
 
 ### 8. src/Main.java
 #### All the classes, methods, and variables are imported here in order to generate a script for testing.
+
+### Process
+#### First we have called Methods.initiateWebBrowserSession() in order to initiate the browser. Then by calling Methods.navigateToURL(parameters.siteURL) by giving it argument parameters.siteURL in order to access the site. We called Methods.verifyTitle(parameters.expectedTitle) and gave it a parameter of parameters.expectedTitle in order to verify whether the site is the same or not. Then We call the Login class and created its object as Login login = new Login(parameters.driver) and in order to login we called Methods.enterText(login.userID, login.userName) and Methods.enterText(login.passwordId, login.userPassword) in order to write user name and password in the text filed and the last step for login was clicking on login button Methods.clickElement(login.loginbtn).
+
+            Methods.waitforTime(parameters.ms);
+            System.out.println("\nInventory Page Heading!");
+            Methods.verifyElementExpectedText(parameters.titleXpath,parameters.ExpectedHeading);
+
+            //2. Add to Cart Product
+            System.out.println("\nSelecting Random Product Name and Price!");
+
+            AddToCart addToCart = new AddToCart();
+
+            WebElement productName = parameters.driver.findElement(By.xpath(addToCart.productNameX));
+            String productText = productName.getText();
+
+            WebElement priceName = parameters.driver.findElement(By.xpath(addToCart.productPriceX));
+            String priceText = priceName.getText();
+
+            System.out.println(productText);
+            System.out.println(priceText);
+
+            Methods.clickElement(addToCart.productBtnX);
+
+            //3. Cart Page
+            Methods.clickElement(addToCart.addToCartBtn);
+            System.out.println("\nVerifying Product in Cart");
+            Methods.verifyElementExpectedText(addToCart.cartProductName,productText);
+            Methods.verifyElementExpectedText(addToCart.cartProductPrice,priceText);
+            Methods.waitforTime(parameters.ms);
+            Methods.clickElement(addToCart.checkOutBtn);
+
+            //4. CheckOut Information
+
+            CheckOut checkOut = new CheckOut();
+
+            System.out.println("\nCheckout Information");
+            Methods.enterText(checkOut.firstNameX, checkOut.firstName);
+            Methods.enterText(checkOut.lastNameX, checkOut.lastName);
+            Methods.enterText(checkOut.zipCodeX, checkOut.zipCode);
+            Methods.clickElement(checkOut.continueBtnX);
+
+            //5. Finalized Details
+            System.out.println("\nEnd Note");
+            Methods.waitforTime(parameters.ms);
+            Methods.clickElement(checkOut.finishBtnX);
+            Methods.verifyElementExpectedText(checkOut.endNoteX, checkOut.endNote);
+
+            Methods.closeBrowser();
