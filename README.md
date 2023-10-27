@@ -8,16 +8,13 @@
 #### The chrome driver.exe to communicate test scripts with Google Chrome.
 
 ### 3. src/Login.java
-#### All variables are stored here which are used in the login process.
-#### All the scripts related to the login are here which includes writing in text fields and clicking on the login button.
+#### All variables are stored here which are used in the login process including X-path.
 
 ### 4. src/AddToCart.java
-#### All variables are stored here which are used in add to cart process.
-#### All the scripts related to the add-to-cart are here including selecting any random item from the inventory list, storing its name and price in a variable, adding it to the cart, and then verifying whether the same product is added to the cart or not.
+#### All variables are stored here which are used in the add to cart process including X-path.
 
 ### 5. src/CheckOut.java
-#### All variables are stored here which are used in the checkout process.
-#### All the scripts related to the checkout are here from filling in customer details to the last.
+#### All variables are stored here which are used in the check out process including X-path.
 
 ### 6. src/Methods.java
 #### All the functions are written here including initiating the web browser, navigating to the URL, clicking on button and more.
