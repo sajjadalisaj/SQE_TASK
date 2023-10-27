@@ -1,5 +1,4 @@
 public class CheckOut {
-    public String titleXpath = "//span[@class='title']";
     public String firstNameX = "first-name";
     public String firstName = "Sajjad";
     public String lastNameX = "last-name";
