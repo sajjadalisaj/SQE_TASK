@@ -19,11 +19,11 @@
 #### All variables are stored here which are used in the checkout process.
 #### All the scripts related to the checkout are here from filling in customer details to the last.
 
-### 4. src/Methods.java
+### 5. src/Methods.java
 #### All the functions are written here including initiating the web browser, navigating to the URL, clicking on button and more.
 
-### 4. src/parameters.java
+### 6. src/parameters.java
 #### The remaining variables are stored here which are the driver name, site URL etc. 
 
-### 4. src/Main.java
+### 7. src/Main.java
 #### All the classes, methods, and variables are imported here in order to generate a script for testing.
