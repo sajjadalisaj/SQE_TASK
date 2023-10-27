@@ -11,19 +11,19 @@
 #### All variables are stored here which are used in the login process.
 #### All the scripts related to the login are here which includes writing in text fields and clicking on the login button.
 
-### 3. src/AddToCart.java
+### 4. src/AddToCart.java
 #### All variables are stored here which are used in add to cart process.
 #### All the scripts related to the add-to-cart are here including selecting any random item from the inventory list, storing its name and price in a variable, adding it to the cart, and then verifying whether the same product is added to the cart or not.
 
-### 4. src/CheckOut.java
+### 5. src/CheckOut.java
 #### All variables are stored here which are used in the checkout process.
 #### All the scripts related to the checkout are here from filling in customer details to the last.
 
-### 5. src/Methods.java
+### 6. src/Methods.java
 #### All the functions are written here including initiating the web browser, navigating to the URL, clicking on button and more.
 
-### 6. src/parameters.java
+### 7. src/parameters.java
 #### The remaining variables are stored here which are the driver name, site URL etc. 
 
-### 7. src/Main.java
+### 8. src/Main.java
 #### All the classes, methods, and variables are imported here in order to generate a script for testing.
