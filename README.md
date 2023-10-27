@@ -37,10 +37,4 @@
 
 #### - In order to perform testing of check out I have created CheckOut class *CheckOut checkOut = new CheckOut()* since the checkout page need user details so I called *Methods.enterText(checkOut.firstNameX, checkOut.firstName)* to write first, name, *Methods.enterText(checkOut.lastNameX, checkOut.lastName)* for last name and *Methods.enterText(checkOut.zipCodeX, checkOut.zipCode)* for post code and then I called *Methods.clickElement(checkOut.continueBtnX)* in order to hit continue button.
 
-            //5. Finalized Details
-            System.out.println("\nEnd Note");
-            Methods.waitforTime(parameters.ms);
-            Methods.clickElement(checkOut.finishBtnX);
-            Methods.verifyElementExpectedText(checkOut.endNoteX, checkOut.endNote);
-
-            Methods.closeBrowser();
+#### - Last I have used *Methods.waitforTime(parameters.ms)* to see the enterd details and then clicked on finish button using *Methods.clickElement(checkOut.finishBtnX)* and verified either the whole process is done or not by comparing the heading written on the page using *Methods.verifyElementExpectedText(checkOut.endNoteX, checkOut.endNote)* then I called *Methods.closeBrowser()* to close the browser after successfully verification of testing.
